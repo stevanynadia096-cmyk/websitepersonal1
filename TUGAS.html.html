@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Of Praise Church</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        /* Header dengan background gambar */
+        header {
+            position: relative;
+            background-image: url('gambar.jpg.jpeg'); /* Gambar yang kamu upload */
+            background-size: cover;
+            background-position: center;
+            height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+        }
+        header::before {
+            content: "";
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 200px;
+            background-color: rgba(0,0,0,0.4);
+            z-index: 0;
+        }
+        header h1, header p {
+            position: relative;
+            z-index: 1;
+            margin: 0;
+        }
+
+        nav {
+            background-color: #2b3a4a;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        /* Warna latar tiap section */
+        #tentang {
+            background-color: #E6E6FA; /* ungu lilac */
+        }
+        #jadwal {
+            background-color: #cdeee8; /* merah lembut */
+        }
+        #kontak {
+            background-color: #FFC0CB; /* pink pastel */
+        }
+        section {
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+            border-radius: 10px;
+            margin-top: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #2b3a4a;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 20px;
+        }
+        h2 {
+            color: #3e5c76;
+        }
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        .schedule-table th {
+            background-color: #3e5c76;
+            color: white;
+        }
+
+        /* Galeri 4 foto */
+        .gallery {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 23%;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+        }
+        @media (max-width: 768px) {
+            .gallery img {
+                width: 48%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Tower Of Praise Church</h1>
+        <p>"My Church is My Home"</p>
+    </header>
+
+    <nav>
+        <a href="#tentang">Tentang Gereja</a>
+        <a href="#jadwal">Jadwal Ibadah</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
+
+    <section id="tentang">
+        <h2>Tentang Gereja</h2>
+        <p>Tower Of Praise Church berdiri sejak tahun 2003 sebagai wadah persekutuan umat Kristiani di kota ini. 
+           Dengan visi "Menyebarkan kasih Kristus kepada semua orang" dan misi "Melayani, Mengajar, dan Menguatkan Iman", 
+           gereja ini menjadi rumah rohani bagi banyak jemaat.</p>
+
+        <h3>Galerry</h3>
+        <div class="gallery">
+            <img src="gereja1.jpeg" alt="Ibadah 1">
+            <img src="gereja2.jpeg" alt="Ibadah 2">
+            <img src="gereja3.jpeg" alt="Ibadah 3">
+            <img src="gereja4.jpeg" alt="Ibadah 4">
+        </div>
+    </section>
+
+    <section id="jadwal">
+        <h2>Jadwal Ibadah</h2>
+        <table class="schedule-table">
+            <tr>
+                <th>Hari</th>
+                <th>Jam</th>
+                <th>Jenis Ibadah</th>
+            </tr>
+            <tr>
+                <td>Minggu</td>
+                <td>10:00 - 12:00</td>
+                <td>Ibadah Umum</td>
+            </tr>
+            <tr>
+                <td>Rabu</td>
+                <td>05.00 - 06:00</td>
+                <td>Doa Fajar</td>
+            </tr>
+            <tr>
+                <td>Sabtu</td>
+                <td>10:00 - 11:00</td>
+                <td>Doa Puasa</td>
+            </tr>
+        </table>
+    </section>
+
+    <section id="kontak">
+        <h2>Kontak</h2>
+        <p>📍 Alamat: Jl. Jamin Ginting, Gg.Gelombang, Kabanjahe</p>
+        <p>  Facebook: <a href='https://www.facebook.com/share/17CsoQYLDD/' target="_blank">TOPC Kabanjahe</a></p>
+        <p>  Instagram: <a href="https://www.instagram.com/topc_kabanjahe?igsh=MXF1eW9xanFveWs2eA==" target="_blank">@topc_kabanjahe</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 TOPC | Semua Hak Dilindungi</p>
+    </footer>
+
+</body>
+</html>
+
